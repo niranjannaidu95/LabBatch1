@@ -10,6 +10,10 @@ export class AuthuserComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.service.authLogin()
+    .subscribe(
+     res => this.data=res
+    )
   }
 
 }
